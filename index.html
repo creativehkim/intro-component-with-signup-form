@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-<div id="intro">
-  <div class="intro__title">
-    Learn to code by watching others
-  </div>
-  <div class="intro__text">
-    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-    but understanding how developers think is invaluable.   
-  </div>
-</div>
-<div class="user__container">
-  <button class="trial__btn">Try it free 7 days then $20/mo. thereafters</button>
-  <input type="text" id="fname" name="fname" placeholder="First Name">
-  <input type="text" id="lname" name="lname" placeholder="Last Name">
-  <input type="text" id="email" name="email" placeholder="Email Address">
-  <input type="text" id="password" name="password" placeholder="Password">
-  <button type="submit" class="submit" value="submit">Claim your free trial</button>
-  <small>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></small>
-</div>
-  
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main__container">
+			<div class="intro__container item">
+				<div class="intro__title">
+					<h1>Learn to code by watching others</h1>
+				</div>
+				<div class="intro__text">
+					<p>
+						xSee how experienced developers solve problems in real-time.
+						Watching scripted tutorials is great, but understanding how
+						developers think is invaluable.
+					</p>
+				</div>
+			</div>
+			<div class="user__container item">
+				<button class="trial__btn">
+					<strong>Try it free 7 days </strong>then $20/mo. thereafters
+				</button>
+				<div class="user__info">
+					<input type="text" id="fname" name="fname" placeholder="First Name" />
+					<input type="text" id="lname" name="lname" placeholder="Last Name" />
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Email Address"
+					/>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						placeholder="Password"
+					/>
+					<button type="submit" class="submit__btn" value="submit">
+						Claim your free trial
+					</button>
+					<div class="terms">
+						<small
+							>By clicking the button, you are agreeing to our
+							<strong><a href="#">Terms and Services</a></strong></small
+						>
+					</div>
+				</div>
+			</div>
+		</div>
 
- 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Hyunji Kim</a>.
-    </p>
-  </footer>
-</body>
+		<footer>
+			<p class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Hyunji Kim</a>.
+			</p>
+		</footer>
+	</body>
 </html>
