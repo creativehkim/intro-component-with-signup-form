@@ -47,13 +47,13 @@
 
 			<div class="user__info">
 				<form action="/" method="GET" id="form">
-					<div class="form__control success">
+					<div class="form__control">
 						<input type="text" id="fname" name="fname" placeholder="First Name" />
 						<i class="fas fa-check-circle"></i>
 						<i class="fas fa-exclamation-circle"></i>
 						<small>Error message</small>
 					</div>
-					<div class="form__control error">
+					<div class="form__control">
 						<input type="text" id="lname" name="lname" placeholder="Last Name" />
 						<i class="fas fa-check-circle"></i>
 						<i class="fas fa-exclamation-circle"></i>
@@ -74,11 +74,27 @@
 					<button type="submit" class="submit__btn" value="submit">
 						Claim your free trial
 					</button>
-					<div class="terms">
-						<small>By clicking the button, you are agreeing to our
-							<strong><a href="#">Terms and Services</a></strong></small>
+					<div class="success__modal" id="modal">
+						<i class="fas fa-check-circle"></i>
+
+
+						<div class="modal__header">
+							<h2>Awesome!</h2>
+						</div>
+						<div class="modal__body">
+							Account confirmation email has been sent to your email address. Verify your e-mail to finish signing up
+							for our free trial.
+						</div>
+						<button id="close__btn" class="close__btn">OK</button>
+						<i class="fas fa-times-circle close__btn"></i>
+
 					</div>
 				</form>
+				<div class="terms">
+					<small>By clicking the button, you are agreeing to our
+						<strong><a href="#">Terms and Services</a></strong></small>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -90,6 +106,8 @@
 				href="#">Hyunji Kim</a>.
 		</p>
 	</footer>
+	<div id="overlay"></div>
+	<script src="script.js"></script>
 </body>
 
 </html>

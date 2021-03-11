@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
 
-* {
+*,
+*::after,
+*::before {
 	box-sizing: border-box;
 	margin: 0;
 }
@@ -160,4 +162,72 @@ strong a {
 	text-align: center;
 	margin: 10px 0;
 	color: #b8b8b8;
+}
+
+.success__modal {
+	background-color: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: all 2000 ease-in-out;
+	border-radius: 10px;
+	padding: 2rem;
+	width: 500px;
+	max-width: 80%;
+	text-align: center;
+	z-index: 10;
+}
+
+.success__modal.active {
+	transform: translate(-50%, -50%) scale(1);
+	transition: all 2000 ease-in-out;
+}
+
+.success__modal i.fa-check-circle {
+	font-size: 6rem;
+	color: #2ecc71;
+}
+
+.success__modal i.fa-times-circle {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	font-size: 20px;
+	color: #a8a8a8;
+	cursor: pointer;
+}
+
+.success__modal .modal__header {
+	font-size: 1.3rem;
+	margin: 2rem 0;
+}
+
+.success__modal .modal__body {
+	margin: 1rem;
+}
+
+#close__btn {
+	background-color: #2ecc71;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	margin-top: 1.5rem;
+}
+
+#overlay {
+	position: fixed;
+
+	opacity: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	pointer-events: none;
+}
+
+#overlay.active {
+	opacity: 1;
+	pointer-events: all;
+	transition: all 2000 ease-in-out;
 }
