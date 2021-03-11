@@ -278,6 +278,9 @@ strong a {
 }
 
 @media screen and (max-width: 400px) {
+	body {
+		overflow-x: hidden;
+	}
 	.intro__container h1 {
 		font-size: 1.8rem;
 		line-height: 2.5rem;
