@@ -238,7 +238,7 @@ strong a {
 
 	#main__container {
 		flex-direction: column;
-		margin: 4rem 10px;
+		margin: 4rem auto;
 	}
 
 	.intro__container p {
@@ -260,10 +260,6 @@ strong a {
 
 	.form__control {
 		padding-bottom: 10px;
-	}
-
-	.form__control input {
-		margin: ;
 	}
 
 	.form__control.error small {
