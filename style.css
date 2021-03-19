@@ -11,8 +11,8 @@ body {
 	background-image: url(/images/bg-intro-desktop.png);
 	background-color: #ff7978;
 	font-family: 'Poppins', sans-serif;
-	width: 100vw;
 	height: 100vh;
+
 	margin: 0 auto;
 }
 
